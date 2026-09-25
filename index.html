@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Временный стиль, чтобы форма была скрыта, пока мы не напишем CSS */
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с поиском и кнопкой -->
+    <header>
+        <input type="text" id="search" placeholder="Поиск проектов...">
+        <button id="create-btn">Создать проект</button>
+    </header>
+
+    <!-- Основной блок со списком проектов -->
+    <main>
+        <section id="projects-list">
+            <!-- Сюда JavaScript будет добавлять карточки проектов -->
+        </section>
+    </main>
+
+    <!-- Форма добавления проекта (изначально скрыта классом hidden) -->
+    <section id="project-form" class="hidden">
+        <h2>Новый проект</h2>
+        <form id="form">
+            <input type="text" id="project-name" placeholder="Название проекта" required>
+            <textarea id="project-desc" placeholder="Описание проекта" required></textarea>
+            <button type="submit">Сохранить</button>
+        </form>
+    </section>
+
+    <!-- Подключаем скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
